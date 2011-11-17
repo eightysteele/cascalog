@@ -1,10 +1,12 @@
 {:namespaces
- ({:source-url nil,
+ ({:source-url
+   "https://github.com/nathanmarz/cascalog/blob/2ea8ccdbfaf44241651e8e00ae67f2b32399a6cb/src/clj/cascalog/api.clj",
    :wiki-url
    "http://nathanmarz.github.com/cascalog/cascalog.api-api.html",
    :name "cascalog.api",
    :doc nil}
-  {:source-url nil,
+  {:source-url
+   "https://github.com/nathanmarz/cascalog/blob/bd20872e9cee5789d61017d53a3b5e673e3cf634/src/clj/cascalog/ops.clj",
    :wiki-url
    "http://nathanmarz.github.com/cascalog/cascalog.ops-api.html",
    :name "cascalog.ops",
@@ -13,8 +15,10 @@
  ({:arglists ([outvars & predicates]),
    :name "<-",
    :namespace "cascalog.api",
-   :source-url nil,
-   :raw-source-url nil,
+   :source-url
+   "https://github.com/nathanmarz/cascalog/blob/2ea8ccdbfaf44241651e8e00ae67f2b32399a6cb/src/clj/cascalog/api.clj#L137",
+   :raw-source-url
+   "https://github.com/nathanmarz/cascalog/raw/2ea8ccdbfaf44241651e8e00ae67f2b32399a6cb/src/clj/cascalog/api.clj",
    :wiki-url
    "http://nathanmarz.github.com/cascalog//cascalog.api-api.html#cascalog.api/<-",
    :doc
@@ -25,8 +29,10 @@
   {:arglists ([& bindings]),
    :name "?-",
    :namespace "cascalog.api",
-   :source-url nil,
-   :raw-source-url nil,
+   :source-url
+   "https://github.com/nathanmarz/cascalog/blob/2ea8ccdbfaf44241651e8e00ae67f2b32399a6cb/src/clj/cascalog/api.clj#L178",
+   :raw-source-url
+   "https://github.com/nathanmarz/cascalog/raw/2ea8ccdbfaf44241651e8e00ae67f2b32399a6cb/src/clj/cascalog/api.clj",
    :wiki-url
    "http://nathanmarz.github.com/cascalog//cascalog.api-api.html#cascalog.api/?-",
    :doc
@@ -37,8 +43,10 @@
   {:arglists ([& args]),
    :name "?<-",
    :namespace "cascalog.api",
-   :source-url nil,
-   :raw-source-url nil,
+   :source-url
+   "https://github.com/nathanmarz/cascalog/blob/2ea8ccdbfaf44241651e8e00ae67f2b32399a6cb/src/clj/cascalog/api.clj#L207",
+   :raw-source-url
+   "https://github.com/nathanmarz/cascalog/raw/2ea8ccdbfaf44241651e8e00ae67f2b32399a6cb/src/clj/cascalog/api.clj",
    :wiki-url
    "http://nathanmarz.github.com/cascalog//cascalog.api-api.html#cascalog.api/?<-",
    :doc
@@ -49,8 +57,10 @@
   {:arglists ([& subqueries]),
    :name "??-",
    :namespace "cascalog.api",
-   :source-url nil,
-   :raw-source-url nil,
+   :source-url
+   "https://github.com/nathanmarz/cascalog/blob/2ea8ccdbfaf44241651e8e00ae67f2b32399a6cb/src/clj/cascalog/api.clj#L193",
+   :raw-source-url
+   "https://github.com/nathanmarz/cascalog/raw/2ea8ccdbfaf44241651e8e00ae67f2b32399a6cb/src/clj/cascalog/api.clj",
    :wiki-url
    "http://nathanmarz.github.com/cascalog//cascalog.api-api.html#cascalog.api/??-",
    :doc
@@ -61,8 +71,10 @@
   {:arglists ([& args]),
    :name "??<-",
    :namespace "cascalog.api",
-   :source-url nil,
-   :raw-source-url nil,
+   :source-url
+   "https://github.com/nathanmarz/cascalog/blob/2ea8ccdbfaf44241651e8e00ae67f2b32399a6cb/src/clj/cascalog/api.clj#L218",
+   :raw-source-url
+   "https://github.com/nathanmarz/cascalog/raw/2ea8ccdbfaf44241651e8e00ae67f2b32399a6cb/src/clj/cascalog/api.clj",
    :wiki-url
    "http://nathanmarz.github.com/cascalog//cascalog.api-api.html#cascalog.api/??<-",
    :doc "Like ??-, but for ?<-. Returns a seq of tuples.",
@@ -72,8 +84,10 @@
   {:arglists ([source sink]),
    :name "cascalog-tap",
    :namespace "cascalog.api",
-   :source-url nil,
-   :raw-source-url nil,
+   :source-url
+   "https://github.com/nathanmarz/cascalog/blob/2ea8ccdbfaf44241651e8e00ae67f2b32399a6cb/src/clj/cascalog/api.clj#L20",
+   :raw-source-url
+   "https://github.com/nathanmarz/cascalog/raw/2ea8ccdbfaf44241651e8e00ae67f2b32399a6cb/src/clj/cascalog/api.clj",
    :wiki-url
    "http://nathanmarz.github.com/cascalog//cascalog.api-api.html#cascalog.api/cascalog-tap",
    :doc
@@ -84,8 +98,10 @@
   {:arglists ([& gens]),
    :name "combine",
    :namespace "cascalog.api",
-   :source-url nil,
-   :raw-source-url nil,
+   :source-url
+   "https://github.com/nathanmarz/cascalog/blob/2ea8ccdbfaf44241651e8e00ae67f2b32399a6cb/src/clj/cascalog/api.clj#L263",
+   :raw-source-url
+   "https://github.com/nathanmarz/cascalog/raw/2ea8ccdbfaf44241651e8e00ae67f2b32399a6cb/src/clj/cascalog/api.clj",
    :wiki-url
    "http://nathanmarz.github.com/cascalog//cascalog.api-api.html#cascalog.api/combine",
    :doc
@@ -96,8 +112,10 @@
   {:arglists ([& args]),
    :name "compile-flow",
    :namespace "cascalog.api",
-   :source-url nil,
-   :raw-source-url nil,
+   :source-url
+   "https://github.com/nathanmarz/cascalog/blob/2ea8ccdbfaf44241651e8e00ae67f2b32399a6cb/src/clj/cascalog/api.clj#L149",
+   :raw-source-url
+   "https://github.com/nathanmarz/cascalog/raw/2ea8ccdbfaf44241651e8e00ae67f2b32399a6cb/src/clj/cascalog/api.clj",
    :wiki-url
    "http://nathanmarz.github.com/cascalog//cascalog.api-api.html#cascalog.api/compile-flow",
    :doc
@@ -108,8 +126,10 @@
   {:arglists ([outvars preds]),
    :name "construct",
    :namespace "cascalog.api",
-   :source-url nil,
-   :raw-source-url nil,
+   :source-url
+   "https://github.com/nathanmarz/cascalog/blob/2ea8ccdbfaf44241651e8e00ae67f2b32399a6cb/src/clj/cascalog/api.clj#L245",
+   :raw-source-url
+   "https://github.com/nathanmarz/cascalog/raw/2ea8ccdbfaf44241651e8e00ae67f2b32399a6cb/src/clj/cascalog/api.clj",
    :wiki-url
    "http://nathanmarz.github.com/cascalog//cascalog.api-api.html#cascalog.api/construct",
    :doc
@@ -120,8 +140,10 @@
   {:arglists ([name & forms]),
    :name "defmain",
    :namespace "cascalog.api",
-   :source-url nil,
-   :raw-source-url nil,
+   :source-url
+   "https://github.com/nathanmarz/cascalog/blob/2ea8ccdbfaf44241651e8e00ae67f2b32399a6cb/src/clj/cascalog/api.clj#L360",
+   :raw-source-url
+   "https://github.com/nathanmarz/cascalog/raw/2ea8ccdbfaf44241651e8e00ae67f2b32399a6cb/src/clj/cascalog/api.clj",
    :wiki-url
    "http://nathanmarz.github.com/cascalog//cascalog.api-api.html#cascalog.api/defmain",
    :doc
@@ -132,8 +154,10 @@
   {:arglists ([name doc-string? attr-map? [fn-args*] body]),
    :name "defmapop",
    :namespace "cascalog.api",
-   :source-url nil,
-   :raw-source-url nil,
+   :source-url
+   "https://github.com/nathanmarz/cascalog/blob/2ea8ccdbfaf44241651e8e00ae67f2b32399a6cb/src/clj/cascalog/api.clj#L323",
+   :raw-source-url
+   "https://github.com/nathanmarz/cascalog/raw/2ea8ccdbfaf44241651e8e00ae67f2b32399a6cb/src/clj/cascalog/api.clj",
    :wiki-url
    "http://nathanmarz.github.com/cascalog//cascalog.api-api.html#cascalog.api/defmapop",
    :doc
@@ -145,8 +169,10 @@
    ([name doc-string? attr-map? & {:keys [init-var combine-var]}]),
    :name "defparallelagg",
    :namespace "cascalog.api",
-   :source-url nil,
-   :raw-source-url nil,
+   :source-url
+   "https://github.com/nathanmarz/cascalog/blob/2ea8ccdbfaf44241651e8e00ae67f2b32399a6cb/src/clj/cascalog/api.clj#L338",
+   :raw-source-url
+   "https://github.com/nathanmarz/cascalog/raw/2ea8ccdbfaf44241651e8e00ae67f2b32399a6cb/src/clj/cascalog/api.clj",
    :wiki-url
    "http://nathanmarz.github.com/cascalog//cascalog.api-api.html#cascalog.api/defparallelagg",
    :doc
@@ -157,8 +183,10 @@
   {:arglists ([f & rest]),
    :name "div",
    :namespace "cascalog.api",
-   :source-url nil,
-   :raw-source-url nil,
+   :source-url
+   "https://github.com/nathanmarz/cascalog/blob/2ea8ccdbfaf44241651e8e00ae67f2b32399a6cb/src/clj/cascalog/api.clj#L344",
+   :raw-source-url
+   "https://github.com/nathanmarz/cascalog/raw/2ea8ccdbfaf44241651e8e00ae67f2b32399a6cb/src/clj/cascalog/api.clj",
    :wiki-url
    "http://nathanmarz.github.com/cascalog//cascalog.api-api.html#cascalog.api/div",
    :doc
@@ -169,8 +197,10 @@
   {:arglists ([path & opts]),
    :name "hfs-seqfile",
    :namespace "cascalog.api",
-   :source-url nil,
-   :raw-source-url nil,
+   :source-url
+   "https://github.com/nathanmarz/cascalog/blob/2ea8ccdbfaf44241651e8e00ae67f2b32399a6cb/src/clj/cascalog/api.clj#L53",
+   :raw-source-url
+   "https://github.com/nathanmarz/cascalog/raw/2ea8ccdbfaf44241651e8e00ae67f2b32399a6cb/src/clj/cascalog/api.clj",
    :wiki-url
    "http://nathanmarz.github.com/cascalog//cascalog.api-api.html#cascalog.api/hfs-seqfile",
    :doc
@@ -187,8 +217,10 @@
       :or {templatefields Fields/ALL}}]),
    :name "hfs-tap",
    :namespace "cascalog.api",
-   :source-url nil,
-   :raw-source-url nil,
+   :source-url
+   "https://github.com/nathanmarz/cascalog/blob/2ea8ccdbfaf44241651e8e00ae67f2b32399a6cb/src/clj/cascalog/api.clj#L21",
+   :raw-source-url
+   "https://github.com/nathanmarz/cascalog/raw/2ea8ccdbfaf44241651e8e00ae67f2b32399a6cb/src/clj/cascalog/api.clj",
    :wiki-url
    "http://nathanmarz.github.com/cascalog//cascalog.api-api.html#cascalog.api/hfs-tap",
    :doc
@@ -199,8 +231,10 @@
   {:arglists ([path & opts]),
    :name "hfs-textline",
    :namespace "cascalog.api",
-   :source-url nil,
-   :raw-source-url nil,
+   :source-url
+   "https://github.com/nathanmarz/cascalog/blob/2ea8ccdbfaf44241651e8e00ae67f2b32399a6cb/src/clj/cascalog/api.clj#L26",
+   :raw-source-url
+   "https://github.com/nathanmarz/cascalog/raw/2ea8ccdbfaf44241651e8e00ae67f2b32399a6cb/src/clj/cascalog/api.clj",
    :wiki-url
    "http://nathanmarz.github.com/cascalog//cascalog.api-api.html#cascalog.api/hfs-textline",
    :doc
@@ -211,8 +245,10 @@
   {:arglists ([path & opts]),
    :name "lfs-seqfile",
    :namespace "cascalog.api",
-   :source-url nil,
-   :raw-source-url nil,
+   :source-url
+   "https://github.com/nathanmarz/cascalog/blob/2ea8ccdbfaf44241651e8e00ae67f2b32399a6cb/src/clj/cascalog/api.clj#L67",
+   :raw-source-url
+   "https://github.com/nathanmarz/cascalog/raw/2ea8ccdbfaf44241651e8e00ae67f2b32399a6cb/src/clj/cascalog/api.clj",
    :wiki-url
    "http://nathanmarz.github.com/cascalog//cascalog.api-api.html#cascalog.api/lfs-seqfile",
    :doc
@@ -229,8 +265,10 @@
       :or {templatefields Fields/ALL}}]),
    :name "lfs-tap",
    :namespace "cascalog.api",
-   :source-url nil,
-   :raw-source-url nil,
+   :source-url
+   "https://github.com/nathanmarz/cascalog/blob/2ea8ccdbfaf44241651e8e00ae67f2b32399a6cb/src/clj/cascalog/api.clj#L22",
+   :raw-source-url
+   "https://github.com/nathanmarz/cascalog/raw/2ea8ccdbfaf44241651e8e00ae67f2b32399a6cb/src/clj/cascalog/api.clj",
    :wiki-url
    "http://nathanmarz.github.com/cascalog//cascalog.api-api.html#cascalog.api/lfs-tap",
    :doc
@@ -241,8 +279,10 @@
   {:arglists ([path & opts]),
    :name "lfs-textline",
    :namespace "cascalog.api",
-   :source-url nil,
-   :raw-source-url nil,
+   :source-url
+   "https://github.com/nathanmarz/cascalog/blob/2ea8ccdbfaf44241651e8e00ae67f2b32399a6cb/src/clj/cascalog/api.clj#L40",
+   :raw-source-url
+   "https://github.com/nathanmarz/cascalog/raw/2ea8ccdbfaf44241651e8e00ae67f2b32399a6cb/src/clj/cascalog/api.clj",
    :wiki-url
    "http://nathanmarz.github.com/cascalog//cascalog.api-api.html#cascalog.api/lfs-textline",
    :doc
@@ -253,8 +293,10 @@
   {:arglists ([& body]),
    :name "predmacro",
    :namespace "cascalog.api",
-   :source-url nil,
-   :raw-source-url nil,
+   :source-url
+   "https://github.com/nathanmarz/cascalog/blob/2ea8ccdbfaf44241651e8e00ae67f2b32399a6cb/src/clj/cascalog/api.clj#L234",
+   :raw-source-url
+   "https://github.com/nathanmarz/cascalog/raw/2ea8ccdbfaf44241651e8e00ae67f2b32399a6cb/src/clj/cascalog/api.clj",
    :wiki-url
    "http://nathanmarz.github.com/cascalog//cascalog.api-api.html#cascalog.api/predmacro",
    :doc
@@ -265,8 +307,10 @@
   {:arglists ([pred-macro-fn]),
    :name "predmacro*",
    :namespace "cascalog.api",
-   :source-url nil,
-   :raw-source-url nil,
+   :source-url
+   "https://github.com/nathanmarz/cascalog/blob/2ea8ccdbfaf44241651e8e00ae67f2b32399a6cb/src/clj/cascalog/api.clj#L226",
+   :raw-source-url
+   "https://github.com/nathanmarz/cascalog/raw/2ea8ccdbfaf44241651e8e00ae67f2b32399a6cb/src/clj/cascalog/api.clj",
    :wiki-url
    "http://nathanmarz.github.com/cascalog//cascalog.api-api.html#cascalog.api/predmacro*",
    :doc "Functional version of predmacro. See predmacro for details.",
@@ -276,8 +320,10 @@
   {:arglists ([]),
    :name "stdout",
    :namespace "cascalog.api",
-   :source-url nil,
-   :raw-source-url nil,
+   :source-url
+   "https://github.com/nathanmarz/cascalog/blob/2ea8ccdbfaf44241651e8e00ae67f2b32399a6cb/src/clj/cascalog/api.clj#L81",
+   :raw-source-url
+   "https://github.com/nathanmarz/cascalog/raw/2ea8ccdbfaf44241651e8e00ae67f2b32399a6cb/src/clj/cascalog/api.clj",
    :wiki-url
    "http://nathanmarz.github.com/cascalog//cascalog.api-api.html#cascalog.api/stdout",
    :doc
@@ -288,8 +334,10 @@
   {:arglists ([& gens]),
    :name "union",
    :namespace "cascalog.api",
-   :source-url nil,
-   :raw-source-url nil,
+   :source-url
+   "https://github.com/nathanmarz/cascalog/blob/2ea8ccdbfaf44241651e8e00ae67f2b32399a6cb/src/clj/cascalog/api.clj#L257",
+   :raw-source-url
+   "https://github.com/nathanmarz/cascalog/raw/2ea8ccdbfaf44241651e8e00ae67f2b32399a6cb/src/clj/cascalog/api.clj",
    :wiki-url
    "http://nathanmarz.github.com/cascalog//cascalog.api-api.html#cascalog.api/union",
    :doc
@@ -300,8 +348,10 @@
   {:arglists ([& body]),
    :name "with-debug",
    :namespace "cascalog.api",
-   :source-url nil,
-   :raw-source-url nil,
+   :source-url
+   "https://github.com/nathanmarz/cascalog/blob/2ea8ccdbfaf44241651e8e00ae67f2b32399a6cb/src/clj/cascalog/api.clj#L351",
+   :raw-source-url
+   "https://github.com/nathanmarz/cascalog/raw/2ea8ccdbfaf44241651e8e00ae67f2b32399a6cb/src/clj/cascalog/api.clj",
    :wiki-url
    "http://nathanmarz.github.com/cascalog//cascalog.api-api.html#cascalog.api/with-debug",
    :doc
@@ -312,8 +362,10 @@
   {:arglists ([conf & body]),
    :name "with-job-conf",
    :namespace "cascalog.api",
-   :source-url nil,
-   :raw-source-url nil,
+   :source-url
+   "https://github.com/nathanmarz/cascalog/blob/2ea8ccdbfaf44241651e8e00ae67f2b32399a6cb/src/clj/cascalog/api.clj#L110",
+   :raw-source-url
+   "https://github.com/nathanmarz/cascalog/raw/2ea8ccdbfaf44241651e8e00ae67f2b32399a6cb/src/clj/cascalog/api.clj",
    :wiki-url
    "http://nathanmarz.github.com/cascalog//cascalog.api-api.html#cascalog.api/with-job-conf",
    :doc
@@ -324,8 +376,10 @@
   {:arglists ([serial-vec & forms]),
    :name "with-serializations",
    :namespace "cascalog.api",
-   :source-url nil,
-   :raw-source-url nil,
+   :source-url
+   "https://github.com/nathanmarz/cascalog/blob/2ea8ccdbfaf44241651e8e00ae67f2b32399a6cb/src/clj/cascalog/api.clj#L118",
+   :raw-source-url
+   "https://github.com/nathanmarz/cascalog/raw/2ea8ccdbfaf44241651e8e00ae67f2b32399a6cb/src/clj/cascalog/api.clj",
    :wiki-url
    "http://nathanmarz.github.com/cascalog//cascalog.api-api.html#cascalog.api/with-serializations",
    :doc
@@ -336,8 +390,10 @@
   {:arglists ([& ops]),
    :name "all",
    :namespace "cascalog.ops",
-   :source-url nil,
-   :raw-source-url nil,
+   :source-url
+   "https://github.com/nathanmarz/cascalog/blob/bd20872e9cee5789d61017d53a3b5e673e3cf634/src/clj/cascalog/ops.clj#L26",
+   :raw-source-url
+   "https://github.com/nathanmarz/cascalog/raw/bd20872e9cee5789d61017d53a3b5e673e3cf634/src/clj/cascalog/ops.clj",
    :wiki-url
    "http://nathanmarz.github.com/cascalog//cascalog.ops-api.html#cascalog.ops/all",
    :doc
@@ -348,8 +404,10 @@
   {:arglists ([& ops]),
    :name "any",
    :namespace "cascalog.ops",
-   :source-url nil,
-   :raw-source-url nil,
+   :source-url
+   "https://github.com/nathanmarz/cascalog/blob/bd20872e9cee5789d61017d53a3b5e673e3cf634/src/clj/cascalog/ops.clj#L43",
+   :raw-source-url
+   "https://github.com/nathanmarz/cascalog/raw/bd20872e9cee5789d61017d53a3b5e673e3cf634/src/clj/cascalog/ops.clj",
    :wiki-url
    "http://nathanmarz.github.com/cascalog//cascalog.ops-api.html#cascalog.ops/any",
    :doc
@@ -358,8 +416,10 @@
    :line 43,
    :file "src/clj/cascalog/ops.clj"}
   {:file "src/clj/cascalog/ops.clj",
-   :raw-source-url nil,
-   :source-url nil,
+   :raw-source-url
+   "https://github.com/nathanmarz/cascalog/raw/bd20872e9cee5789d61017d53a3b5e673e3cf634/src/clj/cascalog/ops.clj",
+   :source-url
+   "https://github.com/nathanmarz/cascalog/blob/bd20872e9cee5789d61017d53a3b5e673e3cf634/src/clj/cascalog/ops.clj#L184",
    :wiki-url
    "http://nathanmarz.github.com/cascalog//cascalog.ops-api.html#cascalog.ops/avg",
    :namespace "cascalog.ops",
@@ -371,8 +431,10 @@
   {:arglists ([& ops]),
    :name "comp",
    :namespace "cascalog.ops",
-   :source-url nil,
-   :raw-source-url nil,
+   :source-url
+   "https://github.com/nathanmarz/cascalog/blob/bd20872e9cee5789d61017d53a3b5e673e3cf634/src/clj/cascalog/ops.clj#L60",
+   :raw-source-url
+   "https://github.com/nathanmarz/cascalog/raw/bd20872e9cee5789d61017d53a3b5e673e3cf634/src/clj/cascalog/ops.clj",
    :wiki-url
    "http://nathanmarz.github.com/cascalog//cascalog.ops-api.html#cascalog.ops/comp",
    :doc
@@ -381,8 +443,10 @@
    :line 60,
    :file "src/clj/cascalog/ops.clj"}
   {:file "src/clj/cascalog/ops.clj",
-   :raw-source-url nil,
-   :source-url nil,
+   :raw-source-url
+   "https://github.com/nathanmarz/cascalog/raw/bd20872e9cee5789d61017d53a3b5e673e3cf634/src/clj/cascalog/ops.clj",
+   :source-url
+   "https://github.com/nathanmarz/cascalog/blob/bd20872e9cee5789d61017d53a3b5e673e3cf634/src/clj/cascalog/ops.clj#L198",
    :wiki-url
    "http://nathanmarz.github.com/cascalog//cascalog.ops-api.html#cascalog.ops/distinct-count",
    :namespace "cascalog.ops",
@@ -394,8 +458,10 @@
   {:arglists ([op]),
    :name "each",
    :namespace "cascalog.ops",
-   :source-url nil,
-   :raw-source-url nil,
+   :source-url
+   "https://github.com/nathanmarz/cascalog/blob/bd20872e9cee5789d61017d53a3b5e673e3cf634/src/clj/cascalog/ops.clj#L107",
+   :raw-source-url
+   "https://github.com/nathanmarz/cascalog/raw/bd20872e9cee5789d61017d53a3b5e673e3cf634/src/clj/cascalog/ops.clj",
    :wiki-url
    "http://nathanmarz.github.com/cascalog//cascalog.ops-api.html#cascalog.ops/each",
    :doc
@@ -406,8 +472,10 @@
   {:arglists ([gen n & {:keys [sort reverse], :or {reverse false}}]),
    :name "first-n",
    :namespace "cascalog.ops",
-   :source-url nil,
-   :raw-source-url nil,
+   :source-url
+   "https://github.com/nathanmarz/cascalog/blob/bd20872e9cee5789d61017d53a3b5e673e3cf634/src/clj/cascalog/ops.clj#L235",
+   :raw-source-url
+   "https://github.com/nathanmarz/cascalog/raw/bd20872e9cee5789d61017d53a3b5e673e3cf634/src/clj/cascalog/ops.clj",
    :wiki-url
    "http://nathanmarz.github.com/cascalog//cascalog.ops-api.html#cascalog.ops/first-n",
    :doc
@@ -418,8 +486,10 @@
   {:arglists ([& ops]),
    :name "juxt",
    :namespace "cascalog.ops",
-   :source-url nil,
-   :raw-source-url nil,
+   :source-url
+   "https://github.com/nathanmarz/cascalog/blob/bd20872e9cee5789d61017d53a3b5e673e3cf634/src/clj/cascalog/ops.clj#L85",
+   :raw-source-url
+   "https://github.com/nathanmarz/cascalog/raw/bd20872e9cee5789d61017d53a3b5e673e3cf634/src/clj/cascalog/ops.clj",
    :wiki-url
    "http://nathanmarz.github.com/cascalog//cascalog.ops-api.html#cascalog.ops/juxt",
    :doc
@@ -430,8 +500,10 @@
   {:arglists ([tmp-path [tuple :as l-seq]]),
    :name "lazy-generator",
    :namespace "cascalog.ops",
-   :source-url nil,
-   :raw-source-url nil,
+   :source-url
+   "https://github.com/nathanmarz/cascalog/blob/bd20872e9cee5789d61017d53a3b5e673e3cf634/src/clj/cascalog/ops.clj#L213",
+   :raw-source-url
+   "https://github.com/nathanmarz/cascalog/raw/bd20872e9cee5789d61017d53a3b5e673e3cf634/src/clj/cascalog/ops.clj",
    :wiki-url
    "http://nathanmarz.github.com/cascalog//cascalog.ops-api.html#cascalog.ops/lazy-generator",
    :doc
@@ -442,8 +514,10 @@
   {:arglists ([op]),
    :name "negate",
    :namespace "cascalog.ops",
-   :source-url nil,
-   :raw-source-url nil,
+   :source-url
+   "https://github.com/nathanmarz/cascalog/blob/bd20872e9cee5789d61017d53a3b5e673e3cf634/src/clj/cascalog/ops.clj#L10",
+   :raw-source-url
+   "https://github.com/nathanmarz/cascalog/raw/bd20872e9cee5789d61017d53a3b5e673e3cf634/src/clj/cascalog/ops.clj",
    :wiki-url
    "http://nathanmarz.github.com/cascalog//cascalog.ops-api.html#cascalog.ops/negate",
    :doc
@@ -454,8 +528,10 @@
   {:arglists ([op & args]),
    :name "partial",
    :namespace "cascalog.ops",
-   :source-url nil,
-   :raw-source-url nil,
+   :source-url
+   "https://github.com/nathanmarz/cascalog/blob/bd20872e9cee5789d61017d53a3b5e673e3cf634/src/clj/cascalog/ops.clj#L131",
+   :raw-source-url
+   "https://github.com/nathanmarz/cascalog/raw/bd20872e9cee5789d61017d53a3b5e673e3cf634/src/clj/cascalog/ops.clj",
    :wiki-url
    "http://nathanmarz.github.com/cascalog//cascalog.ops-api.html#cascalog.ops/partial",
    :doc
@@ -466,8 +542,10 @@
   {:arglists ([str]),
    :name "re-parse",
    :namespace "cascalog.ops",
-   :source-url nil,
-   :raw-source-url nil,
+   :source-url
+   "https://github.com/nathanmarz/cascalog/blob/bd20872e9cee5789d61017d53a3b5e673e3cf634/src/clj/cascalog/ops.clj#L155",
+   :raw-source-url
+   "https://github.com/nathanmarz/cascalog/raw/bd20872e9cee5789d61017d53a3b5e673e3cf634/src/clj/cascalog/ops.clj",
    :wiki-url
    "http://nathanmarz.github.com/cascalog//cascalog.ops-api.html#cascalog.ops/re-parse",
    :doc
@@ -478,8 +556,10 @@
   {:arglists ([[ms] & body]),
    :name "with-timeout",
    :namespace "cascalog.ops",
-   :source-url nil,
-   :raw-source-url nil,
+   :source-url
+   "https://github.com/nathanmarz/cascalog/blob/bd20872e9cee5789d61017d53a3b5e673e3cf634/src/clj/cascalog/ops.clj#L270",
+   :raw-source-url
+   "https://github.com/nathanmarz/cascalog/raw/bd20872e9cee5789d61017d53a3b5e673e3cf634/src/clj/cascalog/ops.clj",
    :wiki-url
    "http://nathanmarz.github.com/cascalog//cascalog.ops-api.html#cascalog.ops/with-timeout",
    :doc

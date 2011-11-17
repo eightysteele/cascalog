@@ -132,7 +132,7 @@ predicates. Predicate macros support destructuring of the input and
 output variables.</pre>
   
   
-  
+  <a href="https://github.com/nathanmarz/cascalog/blob/2ea8ccdbfaf44241651e8e00ae67f2b32399a6cb/src/clj/cascalog/api.clj#L137" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
@@ -150,7 +150,7 @@ query1 sink2 query2)
 for the query and will show up in the JobTracker UI.</pre>
   
   
-  
+  <a href="https://github.com/nathanmarz/cascalog/blob/2ea8ccdbfaf44241651e8e00ae67f2b32399a6cb/src/clj/cascalog/api.clj#L178" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
@@ -165,7 +165,7 @@ out-tap out-vars &amp; predicates) ; flow name must be a static string
 within the ?&lt;- form.</pre>
   
   
-  
+  <a href="https://github.com/nathanmarz/cascalog/blob/2ea8ccdbfaf44241651e8e00ae67f2b32399a6cb/src/clj/cascalog/api.clj#L207" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
@@ -179,7 +179,7 @@ within the ?&lt;- form.</pre>
 Syntax: (??- sink1 query1 sink2 query2 ...)</pre>
   
   
-  
+  <a href="https://github.com/nathanmarz/cascalog/blob/2ea8ccdbfaf44241651e8e00ae67f2b32399a6cb/src/clj/cascalog/api.clj#L193" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
@@ -190,7 +190,7 @@ Syntax: (??- sink1 query1 sink2 query2 ...)</pre>
   <pre id="var-docstr">Like ??-, but for ?&lt;-. Returns a seq of tuples.</pre>
   
   
-  
+  <a href="https://github.com/nathanmarz/cascalog/blob/2ea8ccdbfaf44241651e8e00ae67f2b32399a6cb/src/clj/cascalog/api.clj#L218" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
@@ -205,7 +205,7 @@ abstraction over cascading taps.
  'sink' can be a cascading tap, sink function, or a cascalog tap.</pre>
   
   
-  
+  <a href="https://github.com/nathanmarz/cascalog/blob/2ea8ccdbfaf44241651e8e00ae67f2b32399a6cb/src/clj/cascalog/api.clj#L20" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
@@ -217,7 +217,7 @@ abstraction over cascading taps.
 subquery. Doesn't ensure uniqueness of tuples.</pre>
   
   
-  
+  <a href="https://github.com/nathanmarz/cascalog/blob/2ea8ccdbfaf44241651e8e00ae67f2b32399a6cb/src/clj/cascalog/api.clj#L263" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
@@ -236,7 +236,7 @@ or (compile-flow flow-name sink1 query1 sink2 query2)
 for the query and will show up in the JobTracker UI.</pre>
   
   
-  
+  <a href="https://github.com/nathanmarz/cascalog/blob/2ea8ccdbfaf44241651e8e00ae67f2b32399a6cb/src/clj/cascalog/api.clj#L149" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
@@ -252,7 +252,7 @@ destructuring in a predicate macro, the &amp; symbol must be stringified
 as well.</pre>
   
   
-  
+  <a href="https://github.com/nathanmarz/cascalog/blob/2ea8ccdbfaf44241651e8e00ae67f2b32399a6cb/src/clj/cascalog/api.clj#L245" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
@@ -265,7 +265,7 @@ as well.</pre>
 have any effect.</pre>
   
   
-  
+  <a href="https://github.com/nathanmarz/cascalog/blob/2ea8ccdbfaf44241651e8e00ae67f2b32399a6cb/src/clj/cascalog/api.clj#L360" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
@@ -276,7 +276,7 @@ have any effect.</pre>
   <pre id="var-docstr">Defines a custom operation that appends new fields to the input tuple.</pre>
   
   
-  
+  <a href="https://github.com/nathanmarz/cascalog/blob/2ea8ccdbfaf44241651e8e00ae67f2b32399a6cb/src/clj/cascalog/api.clj#L323" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
@@ -306,7 +306,7 @@ Used as
 (sum ?x :&gt; ?y)</pre>
   
   
-  
+  <a href="https://github.com/nathanmarz/cascalog/blob/2ea8ccdbfaf44241651e8e00ae67f2b32399a6cb/src/clj/cascalog/api.clj#L338" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
@@ -319,7 +319,7 @@ of / in Cascalog queries since / produces Ratio types which aren't
 serializable by Hadoop.</pre>
   
   
-  
+  <a href="https://github.com/nathanmarz/cascalog/blob/2ea8ccdbfaf44241651e8e00ae67f2b32399a6cb/src/clj/cascalog/api.clj#L344" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
@@ -337,7 +337,7 @@ for more keyword arguments.
  <a href="http://www.cascading.org/javadoc/cascading/scheme/SequenceFile.html">http://www.cascading.org/javadoc/cascading/scheme/SequenceFile.html</a></pre>
   
   
-  
+  <a href="https://github.com/nathanmarz/cascalog/blob/2ea8ccdbfaf44241651e8e00ae67f2b32399a6cb/src/clj/cascalog/api.clj#L53" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
@@ -363,7 +363,7 @@ used as a sink.
 subset of output fields to be used in the naming scheme.</pre>
   
   
-  
+  <a href="https://github.com/nathanmarz/cascalog/blob/2ea8ccdbfaf44241651e8e00ae67f2b32399a6cb/src/clj/cascalog/api.clj#L21" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
@@ -381,7 +381,7 @@ for more keyword arguments.
  <a href="http://www.cascading.org/javadoc/cascading/scheme/TextLine.html">http://www.cascading.org/javadoc/cascading/scheme/TextLine.html</a></pre>
   
   
-  
+  <a href="https://github.com/nathanmarz/cascalog/blob/2ea8ccdbfaf44241651e8e00ae67f2b32399a6cb/src/clj/cascalog/api.clj#L26" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
@@ -399,7 +399,7 @@ for more keyword arguments.
  <a href="http://www.cascading.org/javadoc/cascading/scheme/SequenceFile.html">http://www.cascading.org/javadoc/cascading/scheme/SequenceFile.html</a></pre>
   
   
-  
+  <a href="https://github.com/nathanmarz/cascalog/blob/2ea8ccdbfaf44241651e8e00ae67f2b32399a6cb/src/clj/cascalog/api.clj#L67" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
@@ -425,7 +425,7 @@ used as a sink.
 subset of output fields to be used in the naming scheme.</pre>
   
   
-  
+  <a href="https://github.com/nathanmarz/cascalog/blob/2ea8ccdbfaf44241651e8e00ae67f2b32399a6cb/src/clj/cascalog/api.clj#L22" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
@@ -442,7 +442,7 @@ for more keyword arguments.
  <a href="http://www.cascading.org/javadoc/cascading/scheme/TextLine.html">http://www.cascading.org/javadoc/cascading/scheme/TextLine.html</a></pre>
   
   
-  
+  <a href="https://github.com/nathanmarz/cascalog/blob/2ea8ccdbfaf44241651e8e00ae67f2b32399a6cb/src/clj/cascalog/api.clj#L40" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
@@ -459,7 +459,7 @@ because unlike the (&lt;- [?a :&gt; ?b] ...) way of doing pred macros,
 Cascalog doesn't have a declaration for the inputs/outputs.</pre>
   
   
-  
+  <a href="https://github.com/nathanmarz/cascalog/blob/2ea8ccdbfaf44241651e8e00ae67f2b32399a6cb/src/clj/cascalog/api.clj#L234" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
@@ -470,7 +470,7 @@ Cascalog doesn't have a declaration for the inputs/outputs.</pre>
   <pre id="var-docstr">Functional version of predmacro. See predmacro for details.</pre>
   
   
-  
+  <a href="https://github.com/nathanmarz/cascalog/blob/2ea8ccdbfaf44241651e8e00ae67f2b32399a6cb/src/clj/cascalog/api.clj#L226" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
@@ -482,7 +482,7 @@ Cascalog doesn't have a declaration for the inputs/outputs.</pre>
 output. Useful for experimentation in the REPL.</pre>
   
   
-  
+  <a href="https://github.com/nathanmarz/cascalog/blob/2ea8ccdbfaf44241651e8e00ae67f2b32399a6cb/src/clj/cascalog/api.clj#L81" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
@@ -494,7 +494,7 @@ output. Useful for experimentation in the REPL.</pre>
 subquery and ensure uniqueness of tuples.</pre>
   
   
-  
+  <a href="https://github.com/nathanmarz/cascalog/blob/2ea8ccdbfaf44241651e8e00ae67f2b32399a6cb/src/clj/cascalog/api.clj#L257" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
@@ -506,7 +506,7 @@ subquery and ensure uniqueness of tuples.</pre>
 planner to be printed out.</pre>
   
   
-  
+  <a href="https://github.com/nathanmarz/cascalog/blob/2ea8ccdbfaf44241651e8e00ae67f2b32399a6cb/src/clj/cascalog/api.clj#L351" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
@@ -519,7 +519,7 @@ with-job-conf calls will merge configuration maps together, with
 innermost calls taking precedence on conflicting keys.</pre>
   
   
-  
+  <a href="https://github.com/nathanmarz/cascalog/blob/2ea8ccdbfaf44241651e8e00ae67f2b32399a6cb/src/clj/cascalog/api.clj#L110" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
@@ -540,7 +540,7 @@ and unique with serializations currently specified by other calls to
 `with-serializations` or `with-job-conf`.</pre>
   
   
-  
+  <a href="https://github.com/nathanmarz/cascalog/blob/2ea8ccdbfaf44241651e8e00ae67f2b32399a6cb/src/clj/cascalog/api.clj#L118" id="var-source">Source</a>
 </div>
 
 
