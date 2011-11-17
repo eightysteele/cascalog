@@ -1,0 +1,562 @@
+<html>
+  <head>
+    <title>cascalog.api - Cascalog nil API documentation</title>
+    <link href="static/favicon.png" rel="icon" />
+    <link href="static/favicon.png" rel="shortcut icon" />
+    <link media="all" type="text/css" href="static/clojure.css" rel="stylesheet" />
+    <link media="all" type="text/css" href="static/wiki.css" rel="stylesheet" />
+    <link media="all" type="text/css" href="static/internal.css" rel="stylesheet" />
+    <style>.menuWrapper{height: 36px;}</style>
+    <!--[if lte IE 6]>
+    <link rel="stylesheet" href="http://www.wikispaces.com/_/2009051601/s/internal_ie.css" type="text/css" />
+    <![endif]-->
+  </head>
+<!--
+This document was auto-generated from the source by the clojure autodoc system.
+To report errors or ask questions about the overall documentation structure, formatting,
+etc., contact Tom Faulhaber (google mail name: tomfaulhaber).
+For errors in the documentation of a particular namespace, contact the author of that
+namespace.
+-->
+  <body>
+    <div id="AllContentContainer">
+      <div id="Header">
+	<a id="Logo" href="index.html"><img alt="Clojure" height="100" width="100" src="static/clojure-icon.gif" /></a>
+	<h1><a title="page header title" id="page-header" href="index.html">Cascalog API Documentation</a></h1>
+      </div>
+      <div id="leftcolumn"><div style="text-align: center;"></div>
+<div class="menu">
+  <div class="WikiCustomNav WikiElement wiki">
+    <span class="toc-header"><span id="project-name">Cascalog</span> <span id="version"></span> API</span><br />
+    <ul>
+      <li><a class="wiki_link" href="index.html">Overview</a></li>
+      <li><a class="wiki_link" href="api-index.html">API Index</a></li>
+    </ul>
+    <div class="NamespaceTOC">
+      <span class="toc-header">Namespaces</span>
+      <ul id="left-sidebar-list">
+        <li><a href="cascalog.api-api.html" class="wiki_link">cascalog.api</a></li><li><a href="cascalog.ops-api.html" class="wiki_link">cascalog.ops</a></li>
+      </ul>
+    </div>
+    
+    <a href="http://clojure.org" class="wiki_link">Clojure Home</a>
+  </div>
+</div>
+</div>
+      <div id="rightcolumn">
+	<div id="Content">
+	  <div class="contentBox"><div class="innerContentBox">
+              <div id="content_view" class="wiki wikiPage">
+                <div id="right-sidebar"><div id="toc">
+  <h1 class="nopad">Table of Contents</h1>
+  <div style="margin-left: 1em;" class="toc-section">
+    <a href="#toc0">Overview</a>
+    <div style="margin-left: 1em;" class="toc-entry">
+      <a href="#cascalog.api/&lt;-">&lt;-</a>
+    </div><div style="margin-left: 1em;" class="toc-entry">
+      <a href="#cascalog.api/?-">?-</a>
+    </div><div style="margin-left: 1em;" class="toc-entry">
+      <a href="#cascalog.api/?&lt;-">?&lt;-</a>
+    </div><div style="margin-left: 1em;" class="toc-entry">
+      <a href="#cascalog.api/??-">??-</a>
+    </div><div style="margin-left: 1em;" class="toc-entry">
+      <a href="#cascalog.api/??&lt;-">??&lt;-</a>
+    </div><div style="margin-left: 1em;" class="toc-entry">
+      <a href="#cascalog.api/cascalog-tap">cascalog-tap</a>
+    </div><div style="margin-left: 1em;" class="toc-entry">
+      <a href="#cascalog.api/combine">combine</a>
+    </div><div style="margin-left: 1em;" class="toc-entry">
+      <a href="#cascalog.api/compile-flow">compile-flow</a>
+    </div><div style="margin-left: 1em;" class="toc-entry">
+      <a href="#cascalog.api/construct">construct</a>
+    </div><div style="margin-left: 1em;" class="toc-entry">
+      <a href="#cascalog.api/defmain">defmain</a>
+    </div><div style="margin-left: 1em;" class="toc-entry">
+      <a href="#cascalog.api/defmapop">defmapop</a>
+    </div><div style="margin-left: 1em;" class="toc-entry">
+      <a href="#cascalog.api/defparallelagg">defparallelagg</a>
+    </div><div style="margin-left: 1em;" class="toc-entry">
+      <a href="#cascalog.api/div">div</a>
+    </div><div style="margin-left: 1em;" class="toc-entry">
+      <a href="#cascalog.api/hfs-seqfile">hfs-seqfile</a>
+    </div><div style="margin-left: 1em;" class="toc-entry">
+      <a href="#cascalog.api/hfs-tap">hfs-tap</a>
+    </div><div style="margin-left: 1em;" class="toc-entry">
+      <a href="#cascalog.api/hfs-textline">hfs-textline</a>
+    </div><div style="margin-left: 1em;" class="toc-entry">
+      <a href="#cascalog.api/lfs-seqfile">lfs-seqfile</a>
+    </div><div style="margin-left: 1em;" class="toc-entry">
+      <a href="#cascalog.api/lfs-tap">lfs-tap</a>
+    </div><div style="margin-left: 1em;" class="toc-entry">
+      <a href="#cascalog.api/lfs-textline">lfs-textline</a>
+    </div><div style="margin-left: 1em;" class="toc-entry">
+      <a href="#cascalog.api/predmacro">predmacro</a>
+    </div><div style="margin-left: 1em;" class="toc-entry">
+      <a href="#cascalog.api/predmacro*">predmacro*</a>
+    </div><div style="margin-left: 1em;" class="toc-entry">
+      <a href="#cascalog.api/stdout">stdout</a>
+    </div><div style="margin-left: 1em;" class="toc-entry">
+      <a href="#cascalog.api/union">union</a>
+    </div><div style="margin-left: 1em;" class="toc-entry">
+      <a href="#cascalog.api/with-debug">with-debug</a>
+    </div><div style="margin-left: 1em;" class="toc-entry">
+      <a href="#cascalog.api/with-job-conf">with-job-conf</a>
+    </div><div style="margin-left: 1em;" class="toc-entry">
+      <a href="#cascalog.api/with-serializations">with-serializations</a>
+    </div>
+    <br />
+  </div>
+</div>
+</div>
+                <div id="content-tag"><h1 id="overview">API for <span id="namespace-name">cascalog.api</span>
+  - <span id="header-project">Cascalog</span> <span id="header-version"></span> (<span id="header-status"></span>)
+  </h1>
+
+<br />Full namespace name: <span id="long-name">cascalog.api</span>
+<p></p>
+<h2>Overview</h2>
+<pre id="namespace-docstr"></pre>
+
+
+<br />
+<h2>Public Variables and Functions</h2>
+<div id="var-entry">
+  <br />
+  <hr />
+  <h2 id="cascalog.api/&lt;-">&lt;-</h2>
+  <span id="var-type">macro</span><br />
+  <pre id="var-usage">Usage: (&lt;- outvars &amp; predicates)
+</pre>
+  <pre id="var-docstr">Constructs a query or predicate macro from a list of
+predicates. Predicate macros support destructuring of the input and
+output variables.</pre>
+  
+  
+  
+</div><div id="var-entry">
+  <br />
+  <hr />
+  <h2 id="cascalog.api/?-">?-</h2>
+  <span id="var-type">function</span><br />
+  <pre id="var-usage">Usage: (?- &amp; bindings)
+</pre>
+  <pre id="var-docstr">Executes 1 or more queries and emits the results of each query to
+the associated tap.
+
+Syntax: (?- sink1 query1 sink2 query2 ...)  or (?- query-name sink1
+query1 sink2 query2)
+ 
+ If the first argument is a string, that will be used as the name
+for the query and will show up in the JobTracker UI.</pre>
+  
+  
+  
+</div><div id="var-entry">
+  <br />
+  <hr />
+  <h2 id="cascalog.api/?&lt;-">?&lt;-</h2>
+  <span id="var-type">macro</span><br />
+  <pre id="var-usage">Usage: (?&lt;- &amp; args)
+</pre>
+  <pre id="var-docstr">Helper that both defines and executes a query in a single call.
+
+Syntax: (?&lt;- out-tap out-vars &amp; predicates) or (?&lt;- "myflow"
+out-tap out-vars &amp; predicates) ; flow name must be a static string
+within the ?&lt;- form.</pre>
+  
+  
+  
+</div><div id="var-entry">
+  <br />
+  <hr />
+  <h2 id="cascalog.api/??-">??-</h2>
+  <span id="var-type">function</span><br />
+  <pre id="var-usage">Usage: (??- &amp; subqueries)
+</pre>
+  <pre id="var-docstr">Executes one or more queries and returns a seq of seqs of tuples
+ back, one for each subquery given.
+
+Syntax: (??- sink1 query1 sink2 query2 ...)</pre>
+  
+  
+  
+</div><div id="var-entry">
+  <br />
+  <hr />
+  <h2 id="cascalog.api/??&lt;-">??&lt;-</h2>
+  <span id="var-type">macro</span><br />
+  <pre id="var-usage">Usage: (??&lt;- &amp; args)
+</pre>
+  <pre id="var-docstr">Like ??-, but for ?&lt;-. Returns a seq of tuples.</pre>
+  
+  
+  
+</div><div id="var-entry">
+  <br />
+  <hr />
+  <h2 id="cascalog.api/cascalog-tap">cascalog-tap</h2>
+  <span id="var-type">function</span><br />
+  <pre id="var-usage">Usage: (cascalog-tap source sink)
+</pre>
+  <pre id="var-docstr">Defines a cascalog tap which can be used to add additional
+abstraction over cascading taps.
+
+ 'source' can be a cascading tap, subquery, or a cascalog tap.
+ 'sink' can be a cascading tap, sink function, or a cascalog tap.</pre>
+  
+  
+  
+</div><div id="var-entry">
+  <br />
+  <hr />
+  <h2 id="cascalog.api/combine">combine</h2>
+  <span id="var-type">function</span><br />
+  <pre id="var-usage">Usage: (combine &amp; gens)
+</pre>
+  <pre id="var-docstr">Merge the tuples from the subqueries together into a single
+subquery. Doesn't ensure uniqueness of tuples.</pre>
+  
+  
+  
+</div><div id="var-entry">
+  <br />
+  <hr />
+  <h2 id="cascalog.api/compile-flow">compile-flow</h2>
+  <span id="var-type">function</span><br />
+  <pre id="var-usage">Usage: (compile-flow &amp; args)
+</pre>
+  <pre id="var-docstr">Attaches output taps to some number of subqueries and creates a
+Cascading flow. The flow can be executed with `.complete`, or
+introspection can be done on the flow.
+
+Syntax: (compile-flow sink1 query1 sink2 query2 ...)
+or (compile-flow flow-name sink1 query1 sink2 query2)
+ 
+ If the first argument is a string, that will be used as the name
+for the query and will show up in the JobTracker UI.</pre>
+  
+  
+  
+</div><div id="var-entry">
+  <br />
+  <hr />
+  <h2 id="cascalog.api/construct">construct</h2>
+  <span id="var-type">function</span><br />
+  <pre id="var-usage">Usage: (construct outvars preds)
+</pre>
+  <pre id="var-docstr">Construct a query or predicate macro functionally. When
+constructing queries this way, operations should either be vars for
+operations or values defined using one of Cascalog's def macros. Vars
+must be stringified when passed to construct. If you're using
+destructuring in a predicate macro, the &amp; symbol must be stringified
+as well.</pre>
+  
+  
+  
+</div><div id="var-entry">
+  <br />
+  <hr />
+  <h2 id="cascalog.api/defmain">defmain</h2>
+  <span id="var-type">macro</span><br />
+  <pre id="var-usage">Usage: (defmain name &amp; forms)
+</pre>
+  <pre id="var-docstr">Defines an AOT-compiled function with the supplied
+`name`. Containing namespace must be marked for AOT compilation to
+have any effect.</pre>
+  
+  
+  
+</div><div id="var-entry">
+  <br />
+  <hr />
+  <h2 id="cascalog.api/defmapop">defmapop</h2>
+  <span id="var-type">macro</span><br />
+  <pre id="var-usage">Usage: (defmapop name doc-string? attr-map? [fn-args*] body)
+</pre>
+  <pre id="var-docstr">Defines a custom operation that appends new fields to the input tuple.</pre>
+  
+  
+  
+</div><div id="var-entry">
+  <br />
+  <hr />
+  <h2 id="cascalog.api/defparallelagg">defparallelagg</h2>
+  <span id="var-type">macro</span><br />
+  <pre id="var-usage">Usage: (defparallelagg name doc-string? attr-map? &amp; {:keys [init-var combine-var]})
+</pre>
+  <pre id="var-docstr">Binds an efficient aggregator to the supplied symbol. A parallel
+aggregator processes each tuple through an initializer function,
+then combines the results each tuple's initialization until one
+result is achieved. `defparallelagg` accepts two keyword arguments:
+
+:init-var -- A var bound to a fn that accepts raw tuples and returns
+an intermediate result; #'one, for example.
+
+:combine-var -- a var bound to a fn that both accepts and returns
+intermediate results.
+
+For example,
+
+(defparallelagg sum
+:init-var #'identity
+:combine-var #'+)
+
+Used as
+
+(sum ?x :&gt; ?y)</pre>
+  
+  
+  
+</div><div id="var-entry">
+  <br />
+  <hr />
+  <h2 id="cascalog.api/div">div</h2>
+  <span id="var-type">function</span><br />
+  <pre id="var-usage">Usage: (div f &amp; rest)
+</pre>
+  <pre id="var-docstr">Perform floating point division on the arguments. Use this instead
+of / in Cascalog queries since / produces Ratio types which aren't
+serializable by Hadoop.</pre>
+  
+  
+  
+</div><div id="var-entry">
+  <br />
+  <hr />
+  <h2 id="cascalog.api/hfs-seqfile">hfs-seqfile</h2>
+  <span id="var-type">function</span><br />
+  <pre id="var-usage">Usage: (hfs-seqfile path &amp; opts)
+</pre>
+  <pre id="var-docstr">Creates a tap on HDFS using sequence file format. Different
+ filesystems can be selected by using different prefixes for `path`.
+
+Supports keyword option for `:outfields`. See `cascalog.tap/hfs-tap`
+for more keyword arguments.
+
+ See <a href="http://www.cascading.org/javadoc/cascading/tap/Hfs.html">http://www.cascading.org/javadoc/cascading/tap/Hfs.html</a> and
+ <a href="http://www.cascading.org/javadoc/cascading/scheme/SequenceFile.html">http://www.cascading.org/javadoc/cascading/scheme/SequenceFile.html</a></pre>
+  
+  
+  
+</div><div id="var-entry">
+  <br />
+  <hr />
+  <h2 id="cascalog.api/hfs-tap">hfs-tap</h2>
+  <span id="var-type">function</span><br />
+  <pre id="var-usage">Usage: (hfs-tap scheme path-or-file &amp; {:keys [sinkmode sinkparts sink-template source-pattern templatefields], :or {templatefields Fields/ALL}})
+</pre>
+  <pre id="var-docstr">Returns a Cascading Hfs tap with support for the supplied scheme,
+opened up on the supplied path or file object. Supported keyword
+options are:
+
+`:sinkmode` - can be `:keep`, `:update` or `:replace`.
+
+`:sinkparts` - used to constrain the segmentation of output files.
+
+`:source-pattern` - Causes resulting tap to respond as a GlobHfs tap
+when used as source.
+
+`:sink-template` - Causes resulting tap to respond as a TemplateTap when
+used as a sink.
+
+`:templatefields` - When pattern is supplied via :sink-template, this option allows a
+subset of output fields to be used in the naming scheme.</pre>
+  
+  
+  
+</div><div id="var-entry">
+  <br />
+  <hr />
+  <h2 id="cascalog.api/hfs-textline">hfs-textline</h2>
+  <span id="var-type">function</span><br />
+  <pre id="var-usage">Usage: (hfs-textline path &amp; opts)
+</pre>
+  <pre id="var-docstr">Creates a tap on HDFS using textline format. Different filesystems
+ can be selected by using different prefixes for `path`.
+
+Supports keyword option for `:outfields`. See `cascalog.tap/hfs-tap`
+for more keyword arguments.
+ 
+ See <a href="http://www.cascading.org/javadoc/cascading/tap/Hfs.html">http://www.cascading.org/javadoc/cascading/tap/Hfs.html</a> and
+ <a href="http://www.cascading.org/javadoc/cascading/scheme/TextLine.html">http://www.cascading.org/javadoc/cascading/scheme/TextLine.html</a></pre>
+  
+  
+  
+</div><div id="var-entry">
+  <br />
+  <hr />
+  <h2 id="cascalog.api/lfs-seqfile">lfs-seqfile</h2>
+  <span id="var-type">function</span><br />
+  <pre id="var-usage">Usage: (lfs-seqfile path &amp; opts)
+</pre>
+  <pre id="var-docstr">Creates a tap that reads data off of the local filesystem in
+ sequence file format.
+
+Supports keyword option for `:outfields`. See `cascalog.tap/lfs-tap`
+for more keyword arguments.
+ 
+ See <a href="http://www.cascading.org/javadoc/cascading/tap/Lfs.html">http://www.cascading.org/javadoc/cascading/tap/Lfs.html</a> and
+ <a href="http://www.cascading.org/javadoc/cascading/scheme/SequenceFile.html">http://www.cascading.org/javadoc/cascading/scheme/SequenceFile.html</a></pre>
+  
+  
+  
+</div><div id="var-entry">
+  <br />
+  <hr />
+  <h2 id="cascalog.api/lfs-tap">lfs-tap</h2>
+  <span id="var-type">function</span><br />
+  <pre id="var-usage">Usage: (lfs-tap scheme path-or-file &amp; {:keys [sinkmode sinkparts sink-template source-pattern templatefields], :or {templatefields Fields/ALL}})
+</pre>
+  <pre id="var-docstr">Returns a Cascading Lfs tap with support for the supplied scheme,
+opened up on the supplied path or file object. Supported keyword
+options are:
+
+`:sinkmode` - can be `:keep`, `:update` or `:replace`.
+
+`:sinkparts` - used to constrain the segmentation of output files.
+
+`:source-pattern` - Causes resulting tap to respond as a GlobHfs tap
+when used as source.
+
+`:sink-template` - Causes resulting tap to respond as a TemplateTap when
+used as a sink.
+
+`:templatefields` - When pattern is supplied via :sink-template, this option allows a
+subset of output fields to be used in the naming scheme.</pre>
+  
+  
+  
+</div><div id="var-entry">
+  <br />
+  <hr />
+  <h2 id="cascalog.api/lfs-textline">lfs-textline</h2>
+  <span id="var-type">function</span><br />
+  <pre id="var-usage">Usage: (lfs-textline path &amp; opts)
+</pre>
+  <pre id="var-docstr">Creates a tap on the local filesystem using textline format.
+
+Supports keyword option for `:outfields`. See `cascalog.tap/lfs-tap`
+for more keyword arguments.
+
+ See <a href="http://www.cascading.org/javadoc/cascading/tap/Lfs.html">http://www.cascading.org/javadoc/cascading/tap/Lfs.html</a> and
+ <a href="http://www.cascading.org/javadoc/cascading/scheme/TextLine.html">http://www.cascading.org/javadoc/cascading/scheme/TextLine.html</a></pre>
+  
+  
+  
+</div><div id="var-entry">
+  <br />
+  <hr />
+  <h2 id="cascalog.api/predmacro">predmacro</h2>
+  <span id="var-type">macro</span><br />
+  <pre id="var-usage">Usage: (predmacro &amp; body)
+</pre>
+  <pre id="var-docstr">A more general but more verbose way to create predicate macros.
+
+Creates a function that takes in [invars outvars] and returns a
+list of predicates. When making predicate macros this way, you must
+create intermediate variables with gen-nullable-var(s). This is
+because unlike the (&lt;- [?a :&gt; ?b] ...) way of doing pred macros,
+Cascalog doesn't have a declaration for the inputs/outputs.</pre>
+  
+  
+  
+</div><div id="var-entry">
+  <br />
+  <hr />
+  <h2 id="cascalog.api/predmacro*">predmacro*</h2>
+  <span id="var-type">function</span><br />
+  <pre id="var-usage">Usage: (predmacro* pred-macro-fn)
+</pre>
+  <pre id="var-docstr">Functional version of predmacro. See predmacro for details.</pre>
+  
+  
+  
+</div><div id="var-entry">
+  <br />
+  <hr />
+  <h2 id="cascalog.api/stdout">stdout</h2>
+  <span id="var-type">function</span><br />
+  <pre id="var-usage">Usage: (stdout)
+</pre>
+  <pre id="var-docstr">Creates a tap that prints tuples sunk to it to standard
+output. Useful for experimentation in the REPL.</pre>
+  
+  
+  
+</div><div id="var-entry">
+  <br />
+  <hr />
+  <h2 id="cascalog.api/union">union</h2>
+  <span id="var-type">function</span><br />
+  <pre id="var-usage">Usage: (union &amp; gens)
+</pre>
+  <pre id="var-docstr">Merge the tuples from the subqueries together into a single
+subquery and ensure uniqueness of tuples.</pre>
+  
+  
+  
+</div><div id="var-entry">
+  <br />
+  <hr />
+  <h2 id="cascalog.api/with-debug">with-debug</h2>
+  <span id="var-type">macro</span><br />
+  <pre id="var-usage">Usage: (with-debug &amp; body)
+</pre>
+  <pre id="var-docstr">Wrap queries in this macro to cause debug information for the query
+planner to be printed out.</pre>
+  
+  
+  
+</div><div id="var-entry">
+  <br />
+  <hr />
+  <h2 id="cascalog.api/with-job-conf">with-job-conf</h2>
+  <span id="var-type">macro</span><br />
+  <pre id="var-usage">Usage: (with-job-conf conf &amp; body)
+</pre>
+  <pre id="var-docstr">Modifies the job conf for queries executed within the form. Nested
+with-job-conf calls will merge configuration maps together, with
+innermost calls taking precedence on conflicting keys.</pre>
+  
+  
+  
+</div><div id="var-entry">
+  <br />
+  <hr />
+  <h2 id="cascalog.api/with-serializations">with-serializations</h2>
+  <span id="var-type">macro</span><br />
+  <pre id="var-usage">Usage: (with-serializations serial-vec &amp; forms)
+</pre>
+  <pre id="var-docstr">Enables the supplied serializations for queries executed within the
+form. Serializations should be provided as a vector of strings or
+classes, like so:
+
+(import 'org.apache.hadoop.io.serializer.JavaSerialization)
+(with-serializations [JavaSerialization]
+   (?&lt;- ...))
+
+Serializations nest; nested calls to with-serializations will merge
+and unique with serializations currently specified by other calls to
+`with-serializations` or `with-job-conf`.</pre>
+  
+  
+  
+</div>
+
+
+</div>
+              </div>
+            </div>
+          </div>
+	</div>
+	<div id="foot">
+	  <div style="text-align: center;" id="copyright">No copyright info </div>
+	</div>
+      </div>
+      <div id="DesignedBy">Logo &amp; site design by <a title="Visit Tom Hickey's website." href="http://www.tomhickey.com">Tom Hickey</a>.<br />
+      Clojure auto-documentation system by Tom Faulhaber.</div>
+    </div>
+    <!-- /AllContentContainer -->
+  </body>
+
+</html>
